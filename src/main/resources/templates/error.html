@@ -1,0 +1,16 @@
+
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <title>Oops!</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" />
+</head>
+<html>
+<div class="errorPage">
+    <span class="oops">Oops!</span><br/>
+    <img th:src="@{/MissingPage.jpg}"></img>
+    <p> 您请求的路径有问题！请检查您的链接
+        (<span th:text="${path}"></span>).</p>
+    <p th:text="${'Details: ' + message}"></p>
+</div>
+</html>
+</html>
